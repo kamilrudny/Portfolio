@@ -156,6 +156,10 @@
     height: 35px;
     font-size: 0.7rem;
   }
+  .container__section__wrap__btn:hover {
+    font-size: 0.7rem;
+    color: #1d1d1d;
+  }
   .container__section__wraper {
     width: 280px;
   }
@@ -194,6 +198,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+  .container__section__wrap__heading {
+    text-align: center;
+  }
+  .container__section__wrap__paragraph {
+    text-align: center;
+    font-size: 0.6rem;
   }
   .flex {
     display: none;
