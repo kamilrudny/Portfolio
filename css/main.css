@@ -210,8 +210,8 @@
     display: none;
   }
   .clip-path {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
     background: #1d1d1d;
   }
 }
