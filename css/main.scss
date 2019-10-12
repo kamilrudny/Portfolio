@@ -156,6 +156,14 @@
                 justify-content: center;
                 flex-direction: column;
                 width:100%;
+
+                &__heading {
+                    text-align: center;
+                }
+
+                &__paragraph {
+                    text-align: center;
+                }
             }
         }
 
