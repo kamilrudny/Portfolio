@@ -121,7 +121,7 @@
             font-size: 0.7rem;
 
             &:hover {
-                font-size: 0.7rem;
+                font-size: 0.7rem; color: #1d1d1d;
             }
         }
     }
@@ -163,6 +163,7 @@
 
                 &__paragraph {
                     text-align: center;
+                    font-size: 0.6rem;
                 }
             }
         }
