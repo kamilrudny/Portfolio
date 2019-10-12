@@ -70,8 +70,8 @@
 }
 
 .container__section__wraper {
-  width: 100%;
-  margin-right: 100px;
+  width: 450px;
+  margin: 0 100px 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +88,7 @@
   width: 100px;
   height: 100px;
   border: 2px solid #1d1d1d;
-  margin: 0 50px 50px 0;
+  margin: 0 25px 25px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,8 +132,76 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+}
+
+@media (max-width: 1500px) {
+  .container__section__wraper {
+    width: 360px;
+  }
+  .container__section__wraper__socials {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container__section__wrap__heading {
+    font-size: 3rem;
+  }
+  .container__section__wrap__paragraph {
+    font-size: 1rem;
+  }
+  .container__section__wrap__btn {
+    width: 130px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+  .container__section__wraper {
+    width: 280px;
+  }
+  .container__section__wraper__socials {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin: 0 10px 25px 10px;
+  }
+  .container__section__wraper__socials:hover {
+    border: 1.5px solid #1d1d1d;
+    font-size: 30px;
+    color: #00ff78;
+  }
+}
+
+@media (max-width: 965px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container__section__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .flex {
+    display: none;
+  }
+  .clip-path {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background: #1d1d1d;
+  }
 }
 /*# sourceMappingURL=main.css.map */
