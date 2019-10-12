@@ -182,6 +182,7 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    height: 100%;
   }
   .container__section__wrap {
     display: -webkit-box;
