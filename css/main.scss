@@ -148,7 +148,7 @@
         display: grid;
         background: #00ff78;
         grid-template-columns: 1fr;
-        min-height: fill-available;
+        min-height: -webkit-fill-available;
 
         &__section {
             

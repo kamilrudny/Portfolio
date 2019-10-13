@@ -184,8 +184,6 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     min-height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: fill-available;
   }
   .container__section__wrap {
     display: -webkit-box;
