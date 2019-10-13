@@ -14,7 +14,6 @@
   display: grid;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
-  overflow: hidden;
 }
 
 .container__section {
@@ -184,7 +183,7 @@
     background: #00ff78;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    min-height: 100%;
+    height: calc(100vh - 60px);
   }
   .container__section__wrap {
     display: -webkit-box;
