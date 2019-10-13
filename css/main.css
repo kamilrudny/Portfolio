@@ -183,9 +183,7 @@
     background: #00ff78;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    height: 100vh;
-    /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(100vh - 50px);
   }
   .container__section__wrap {
     display: -webkit-box;
