@@ -153,6 +153,7 @@ body {
         background: #00ff78;
         grid-template-columns: 1fr;
         height: calc(100vh - 60px);
+        width: calc(100vw + 1px);
 
         &__section {
             
