@@ -148,7 +148,8 @@
         display: grid;
         background: #00ff78;
         grid-template-columns: 1fr;
-        min-height: -webkit-fill-available;
+        height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
 
         &__section {
             
