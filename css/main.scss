@@ -2,15 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
 }
 
 body {
-    background:  #00ff78;
+    background:  #DADADA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:hover, a:active{
+    color: transparent;
+    text-decoration: none;
 }
 
 .container{
     font-family: 'Raleway', sans-serif; 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #00ff78;
     display: grid;
@@ -82,6 +92,82 @@ body {
     }
 }
 
+.contact {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__container {
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+
+        &__heading{
+            font-size: 40px;
+            color: #000;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 400;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: block;
+        }
+
+        &__btn {
+            background: none;
+            color: #00ff78;
+            border: 2px solid #00ff78;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            font-size: 20px;
+            cursor: pointer;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            transition-duration: 0.5s;
+            margin-top: 40px;
+
+            &:hover {
+                background: #00ff78;
+                color: #1d1d1d;
+            }
+        }
+    }
+
+    .name, .email, .message{
+        background: none;
+        border:none;
+        outline: none;
+        border-bottom: 1px solid;
+        color: #888;
+        padding: 10px 6px;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+    .name{
+        width: 75%;
+    }
+      
+    .email{
+        width: 75%;
+    }
+      
+    .message{
+        min-width: 75%;
+        max-width: 75%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        resize: none;
+    }
+}
+
 .color {
     color: #00ff78;
 }
@@ -96,6 +182,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
 }
+
 
 @media (max-width: 1500px) {
    .container__section__wraper{
@@ -152,9 +239,7 @@ body {
         display: grid;
         background: #00ff78;
         grid-template-columns: 1fr;
-        height: calc(100vh - 60px);
-        width: calc(100vw + 1px);
-        overflow: hidden;
+        height: 95vh;
 
         &__section {
             

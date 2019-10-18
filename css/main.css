@@ -3,15 +3,25 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  background: #00ff78;
+  background: #DADADA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, a:visited, a:hover, a:active {
+  color: transparent;
+  text-decoration: none;
 }
 
 .container {
   font-family: 'Raleway', sans-serif;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #00ff78;
   display: -ms-grid;
@@ -115,6 +125,98 @@ body {
   color: #00ff78;
 }
 
+.contact {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__container {
+  width: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.contact__container__heading {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: block;
+}
+
+.contact__container__btn {
+  background: none;
+  color: #00ff78;
+  border: 2px solid #00ff78;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin-top: 40px;
+}
+
+.contact__container__btn:hover {
+  background: #00ff78;
+  color: #1d1d1d;
+}
+
+.contact .name, .contact .email, .contact .message {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.contact .name {
+  width: 75%;
+}
+
+.contact .email {
+  width: 75%;
+}
+
+.contact .message {
+  min-width: 75%;
+  max-width: 75%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  resize: none;
+}
+
 .color {
   color: #00ff78;
 }
@@ -187,9 +289,7 @@ body {
     background: #00ff78;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    height: calc(100vh - 60px);
-    width: calc(100vw + 1px);
-    overflow: hidden;
+    height: 95vh;
   }
   .container__section__wrap {
     display: -webkit-box;

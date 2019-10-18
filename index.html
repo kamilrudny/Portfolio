@@ -10,22 +10,32 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="container__section clip-path">
-            <div class="container__section__wrap">
-                    <h1 class="container__section__wrap__heading">Hi,<br>I'm <span class="color">K</span>amil,<br>web developer.</h1>
-                    <p class="container__section__wrap__paragraph">Front End Developer / Freelancer / Student</p>
-                    <button class="container__section__wrap__btn">Contact Me!!!</button>
+    <div id="fullpage">
+        <div class="container">
+                <div class="container__section clip-path">
+                    <div class="container__section__wrap">
+                        <h1 class="container__section__wrap__heading">Hi,<br>I'm <span class="color">K</span>amil,<br>web developer.</h1>
+                        <p class="container__section__wrap__paragraph">Front End Developer / Freelancer / Student</p>
+                        <a href="#scroll"><button class="container__section__wrap__btn">Contact Me</button></a>
+                    </div>
+                </div>
+                <div class="container__section flex">
+                    <div class="container__section__wraper">
+                        <div class="container__section__wraper__socials"><i class="demo-icon icon-facebook"></i></div>
+                        <div class="container__section__wraper__socials"><i class="demo-icon icon-youtube"></i></div>
+                        <div class="container__section__wraper__socials"><i class="demo-icon icon-instagram"></i></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container__section flex">
-            <div class="container__section__wraper">
-                    <div class="container__section__wraper__socials"><i class="demo-icon icon-facebook"></i></div>
-                    <div class="container__section__wraper__socials"><i class="demo-icon icon-youtube"></i></div>
-                    <div class="container__section__wraper__socials"><i class="demo-icon icon-instagram"></i></div>
+            <div class="contact" id="scroll">
+                <div class="contact__container">
+                    <h1 class="contact__container__heading h1">Get in touch with <span class="color">Me</span></h1>
+                    <input type="text" class="name" placeholder="Your Name">
+                    <input type="email" class="email" placeholder="Your Email">
+                    <textarea rows="2" placeholder="Message" class="message"></textarea>
+                    <button class="contact__container__btn">Get in touch</button>
+                </div>
             </div>
-        </div>
     </div>
-
 </body>
 </html>
